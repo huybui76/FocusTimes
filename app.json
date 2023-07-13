@@ -22,11 +22,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon-App.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.neobi281.FocusTimes"
     },
     "web": {
       "bundler": "metro",
       "favicon": "./assets/images/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "082ea487-f69e-409f-b43c-91c8e50a0a27"
+      }
     }
   }
 }

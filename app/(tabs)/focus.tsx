@@ -16,6 +16,10 @@ export default function Focus() {
         setCurrentSubject(undefined);
     };
 
+    const onClearHistory = () => {
+        setHistory([]);
+    }
+
     return (
         <KeyboardAvoidingView
             style={styles.container}
@@ -24,7 +28,7 @@ export default function Focus() {
             {!currentSubject ? (
                 <>
                     <FocusTimeScreen addSubject={setCurrentSubject} />
-                    <FocusHistory history={history} />
+                    <FocusHistory history={history} onClearHistory={onClearHistory} />
                 </>
             ) : (
                 <Timer

@@ -24,7 +24,7 @@ const Countdown: React.FC<CountdownProps> = ({
 
     const countDown = () => {
         setMillis((time) => {
-            if (time === 0) {
+            if (time === null || time === 0) { // Check if time is null or 0
                 clearInterval(interval.current as NodeJS.Timeout);
                 onEnd(reset);
                 return time;
@@ -33,6 +33,7 @@ const Countdown: React.FC<CountdownProps> = ({
             return timeLeft;
         });
     };
+
 
     useEffect(() => {
         setMillis(minutesToMillis(minutes));
@@ -75,7 +76,7 @@ const styles = StyleSheet.create({
 
 
         padding: spacing.lg,
-        backgroundColor: colors.Timer.color,
+        backgroundColor: 'rgba(94, 132, 226, 0.3)',
     },
 });
 

@@ -7,6 +7,7 @@ import Colors from '../constants/Colors'
 import { ProgressBar } from 'react-native-paper'
 import Timing from './Timing'
 import { useKeepAwake } from 'expo-keep-awake';
+import { SquareButton } from '../components/SquareButton'
 
 interface TimerProps {
     focusSubject: string;
@@ -76,7 +77,7 @@ export const Timer: React.FC<TimerProps> = ({ focusSubject, clearSubject, onTime
                 )}
             </View>
             <View style={styles.clearSubject}>
-                <RoundedButton title='-' size={50} onPress={clearSubject} />
+                <SquareButton title='back' size={50} onPress={clearSubject} />
             </View>
 
         </View>

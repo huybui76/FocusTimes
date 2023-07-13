@@ -1,3 +1,4 @@
+import { Timer } from './../features/Timer';
 const tintColorLight = '#2f95dc';
 const tintColorDark = '#fff';
 
@@ -16,4 +17,10 @@ export default {
     tabIconDefault: '#ccc',
     tabIconSelected: tintColorDark,
   },
+  white: {
+    text: '#fff',
+  }
+  , Timer: {
+    color: 'rgba(94, 132, 226, 0.3)',
+  }
 };

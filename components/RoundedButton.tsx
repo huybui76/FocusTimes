@@ -25,5 +25,5 @@ const styles = (size: number) => ({
         borderColor: colors.light,
         borderWidth: 2
     },
-    text: { color: colors.light, fontSize: size / 3 },
+    text: { color: colors.light, fontSize: size / 4 },
 }); 

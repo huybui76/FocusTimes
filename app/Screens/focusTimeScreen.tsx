@@ -39,10 +39,10 @@ export default function FocusTimeScreen({ addSubject }: FocusTimeScreenProps) {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+
   },
   keyboard: {
-    flex: 1,
+    //flex: 1,
   },
   textInput: {
     flex: 1,
